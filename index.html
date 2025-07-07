@@ -14,15 +14,15 @@
             <nav>
                 <div class="logo">OP</div>
                 <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li> <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="hero">
         <div class="container">
             <div class="hero-content">
@@ -33,10 +33,12 @@
                 <a href="#contact" class="btn">Contact Me</a>
                 <a href="#play_a_game" class="btn">Play A Memory Game</a>
             </div>
+            <div class="hero-image">
+                <img src="images/18ede0dd-093b-41b1-8135-ac4820674782.jpeg" alt="Owethu Peyane">
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
@@ -63,31 +65,175 @@
         </div>
     </section>
 
-    <!-- Game Section -->
-    <section id="play_a_game">
-    <div class="container">
-        <h2 class="section-title">Memory Game</h2>
-        <div class="game-options">
-        <button class="btn game-btn" data-level="easy">Easy (4x4)</button>
-        <button class="btn game-btn" data-level="medium">Medium (6x6)</button>
-        <button class="btn game-btn" data-level="hard">Hard (8x8)</button>
-        <button class="volume-control" id="volumeToggle">🔊</button>
+
+
+
+    <section id="hobbies">
+        <div class="container">
+            <h2 class="section-title">Beyond Code</h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">When I'm not debugging or building applications, here's what keeps me inspired and balanced.</p>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-header">
+                        <span class="hobby-icon">🎵</span>
+                        <h3 class="hobby-title">Music Vibes</h3>
+                    </div>
+                    <p>Music fuels my creativity and keeps me focused during long coding sessions. I do not have a specific genre, here's what's currently on repeat:</p>
+                    <div class="spotify-player">
+                        <div class="spotify-header">
+                            <svg class="spotify-logo" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.84-.179-.84-.6 0-.359.24-.66.54-.78 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.242 1.021zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.481.78.241 1.2zm.120-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56z"/>
+                            </svg>
+                            <div>
+                                <h4>Everyday Playlist</h4>
+                                <p>My go-to beats to get me through the day</p>
+                            </div>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/59qES3L5qNyj8VnfTuDFm9?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="spotify-player">
+                        <div class="spotify-header">
+                            <svg class="spotify-logo" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.84-.179-.84-.6 0-.359.24-.66.54-.78 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.242 1.021zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.481.78.241 1.2zm.120-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56z"/>
+                            </svg>
+                            <div>
+                                <h4>Coding Flow Playlist</h4>
+                                <p>My go-to beats for productive sessions</p>
+                            </div>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZqd5JICZI0u?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-header">
+                        <span class="hobby-icon">🎬</span>
+                        <h3 class="hobby-title">Binge Watching</h3>
+                    </div>
+                    <p>Great storytelling inspires great code. Here are my current Netflix obsessions:</p>
+                    <div class="netflix-player">
+                        <div class="netflix-header">
+                            <svg class="netflix-logo" viewBox="0 0 24 24" fill="white">
+                                <path d="M5.398 0v.6l8.112 14.128V24l2.954-8.972 7.536-15.028h-3.077L15.21 8.432 9.397.001z"/>
+                                <path d="M5.398 0l6.077 9.614V0z"/>
+                            </svg>
+                            <div>
+                                <h4>Currently Watching</h4>
+                                <p>My latest Netflix finds</p>
+                            </div>
+                        </div>
+                        <div class="shows-grid">
+                            <div class="show-item">
+                                <h5>🚀 Young Sheldon</h5>
+                                <p>Heartwarming comedy that reminds me of my own childhood</p>
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/gCy_GJvTmG8" title="Young Sheldon Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class="show-item">
+                                <h5>💻 Black Mirror</h5>
+                                <p>Tech dystopia that hits different as a developer</p>
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/b9EkMc79ZSU" title="Stranger Things Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class="show-item">
+                                <h5>Acrimony</h5>
+                                <p>Drama that keeps you on the edge of your seat</p>
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/wlpunOUxYSo" title="Acrimony Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class="show-item">
+                                <h5>🏆 The Rookie</h5>
+                                <p>Inspiring story of a rookie cop chasing his dreams</p>
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/8BPlx6eK1vc" title="The Rookie Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                <!-- <div class="hobby-card">
+                    <div class="hobby-header">
+                        <span class="hobby-icon">📚</span>
+                        <h3 class="hobby-title">Learning & Reading</h3>
+                    </div>
+                    <p>Constantly expanding my knowledge through books, articles, and tech blogs.</p>
+                    <div class="reading-section">
+                        <div class="books-grid">
+                            <div class="book-item">
+                                <div class="book-cover">📖</div>
+                                <div class="book-title">Clean Code</div>
+                                <div class="book-author">Robert C. Martin</div>
+                            </div>
+                            <div class="book-item">
+                                <div class="book-cover">🧠</div>
+                                <div class="book-title">Algorithms</div>
+                                <div class="book-author">Robert Sedgewick</div>
+                            </div>
+                            <div class="book-item">
+                                <div class="book-cover">⚡</div>
+                                <div class="book-title">The Pragmatic Programmer</div>
+                                <div class="book-author">Andy Hunt</div>
+                            </div> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <!-- <div class="hobby-card">
+                    <div class="hobby-header">
+                        <span class="hobby-icon">🎮</span>
+                        <h3 class="hobby-title">Gaming & Sports</h3>
+                    </div>
+                    <p>Whether it's problem-solving in games or staying active, I believe in work-life balance.</p>
+                    <div class="gaming-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Hours Coding</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">Games Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3x</div>
+                            <div class="stat-label">Weekly Workouts</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Curiosity Level</div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
         </div>
-        <div id="game-board" class="memory-game"></div>
-        <div class="game-stats">
-        <p>Moves: <span id="moves">0</span></p>
-        <p>Time: <span id="time">0</span>s</p>
-        </div>
-    </div>
     </section>
 
+    <section id="play_a_game">
+        <div class="container">
+            <h2 class="section-title">Memory Game</h2>
+            <div class="game-controls">
+                <div class="difficulty-options">
+                    <button class="btn game-btn" data-level="easy">Easy (4x4)</button>
+                    <button class="btn game-btn" data-level="medium">Medium (6x6)</button>
+                    <button class="btn game-btn" data-level="hard">Hard (8x8)</button>
+                </div>
+                <div class="theme-options">
+                    <button class="btn theme-btn active" data-theme="animals">Animals</button>
+                    <button class="btn theme-btn" data-theme="fruits">Fruits</button>
+                    <button class="btn theme-btn" data-theme="sports">Sports</button>
+                </div>
+            </div>
+            <div id="game-board" class="memory-game"></div>
+            <div class="game-stats">
+                <p>Moves: <span id="moves">0</span></p>
+                <p>Time: <span id="time">0</span>s</p>
+                <p class="high-score">Best: <span id="highscore">-</span> moves</p>
+            </div>
+            <button class="volume-control" id="volumeToggle">🔊</button>
+        </div>
+    </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                <!-- Project 1 - SauceDemo Automation -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="images/ChatGPT Image Jun 11, 2025, 02_01_04 PM.png" alt="Allure Report">
@@ -95,7 +241,7 @@
                     <div class="project-info">
                         <h3>SauceDemo Test Automation</h3>
                         <p>Automated testing framework for e-commerce site with Selenium, TestNG and Allure reporting. Validates login, inventory and cart functionality.</p>
-                        <div class="project-tech">
+                        <div class="tech-stack">
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">Selenium</span>
                             <span class="tech-tag">TestNG</span>
@@ -104,12 +250,29 @@
                         </div>
                         <div class="project-links">
                             <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="https://github.com/otty98/saucedemo-automation.git"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://github.com/otty98/saucedemo-automation.git" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="memorygame.jpg" alt="Memory Game Thumbnail" class="project-thumbnail">
+                    <div class="project-info">
+                        <h3>Memory Game</h3>
+                        <p>A fun and challenging memory card game built with HTML, CSS, and JavaScript, featuring multiple difficulty levels, sound effects, and a high score tracker.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">LocalStorage</span>
+                            <span class="tech-tag">CSS Animations</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#play_a_game" class="btn btn-secondary">Play Game</a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" alt="Task Management App">
@@ -117,7 +280,7 @@
                     <div class="project-info">
                         <h3>Task Management App</h3>
                         <p>A productivity application for teams to collaborate on projects with real-time updates and notifications.</p>
-                        <div class="project-tech">
+                        <div class="tech-stack">
                             <span class="tech-tag">Vue.js</span>
                             <span class="tech-tag">Firebase</span>
                             <span class="tech-tag">WebSockets</span>
@@ -129,7 +292,6 @@
                     </div>
                 </div>
                 
-                <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Weather Dashboard">
@@ -137,7 +299,7 @@
                     <div class="project-info">
                         <h3>Weather Dashboard</h3>
                         <p>Interactive weather application with 5-day forecasts, location search, and animated weather representations.</p>
-                        <div class="project-tech">
+                        <div class="tech-stack">
                             <span class="tech-tag">JavaScript</span>
                             <span class="tech-tag">API Integration</span>
                             <span class="tech-tag">CSS Animations</span>
@@ -152,7 +314,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
     <div class="container">
         <h2 class="section-title">Get In Touch</h2>
