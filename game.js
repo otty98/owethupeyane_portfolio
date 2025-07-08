@@ -24,9 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Define themes object
   const themes = {
-    default: ['🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼', '🐨', '🐯', '🦁', '🐮', '🐷', '🐸', '🐵']
+    animals: ['🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼', '🐨', '🐯', '🦁', '🐮', '🐷', '🐸', '🐵'],
+    fruits: ['🍎', '🍌', '🍓', '🍇', '🍉', '🍒', '🍑', '🍍', '🥝', '🥭', '🍐', '🍋', '🍊', '🥥', '🍈'],
+    sports: ['⚽', '🏀', '🏈', '⚾', '🎾', '🏐', '🏉', '🥏', '🏓', '🏸', '🥊', '🥋', '⛷️', '🏂', '🏒']
   };
-  let currentTheme = 'default'; // Initialize currentTheme
+  let currentTheme = 'animals'; // Set default to one of them
+
 
   // Initialize leaderboard and unlockedLevels at the top scope
   const leaderboard = {
@@ -77,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Update high score display
   function updateHighScoreDisplay() {
     if (currentLevel && leaderboard[currentLevel].moves !== Infinity) {
-      highscoreDisplay.textContent = `${leaderboard[currentLevel].moves} moves, ${leaderboard[currentLevel].time}s`;
+    highscoreDisplay.textContent = `${leaderboard[currentLevel].moves} moves in ${leaderboard[currentLevel].time}s`;
     } else {
       highscoreDisplay.textContent = '-';
     }
@@ -308,8 +311,14 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.classList.remove('active');
       });
       e.target.classList.add('active');
+
+      // 🔥 Restart game with new theme if a level is active
+      if (currentLevel) {
+        startGame(levels[currentLevel]);
+      }
     }
   });
+
 
   function removeCelebration() {
     const existingCelebration = document.querySelector('.celebration');
